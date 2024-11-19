@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #800000;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+/* Tampilan Awal */
+#home {
+    background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home button {
+    padding: 0.7rem 1.5rem;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #660000;
+}
+
+/* Section Styles */
+#about, #service, #menu, #order {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #800000;
+    margin-bottom: 1.5rem;
+}
+
+.service-item, .menu-item {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.service-item:hover, .menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    color: #800000;
+    margin-top: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #800000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #660000;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 5px;
+}
